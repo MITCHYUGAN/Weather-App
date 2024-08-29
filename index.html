@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Weather App</h1>
+    <p>Please enter a Location to get started</p>
+    <form action="">
+        <input type="text" name="" id="location" placeholder="city, place, country" required>
+        <button>🔍</button>
+    </form>
+    <img class="loader" src="https://i.gifer.com/ZKZg.gif" alt="">
+
+    <section class="currentWeather">
+      <div class="currentweather">
+        <h3>Current Weather</h3>
+        <p class="currenttime">time</p>
+        <div class="currentTempWrapper">
+          <h1 class="currentTempImg"></h1>
+          <h1 class="currentTemp"></h1>
+        </div>
+      </div>
+      <div class="currentCondition">
+        <h4 class="currentcondition"></h4>
+        <p>Feels like <span class="currentfeelslike"></span></p>
+        <p>Precipitation: <span class="currentprecipitation"></span>%</p>
+      </div>
+    </section>
+
+    <h1 class="otherdaysheadingtext">Other Days</h1>
+    <section class="otherdaysWrapper">
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>

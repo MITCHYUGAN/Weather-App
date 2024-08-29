@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    width: 100%;
+    gap: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgba(0, 0, 0, 0.519);
+    background: linear-gradient(90deg, rgba(53,110,198,1) 0%, rgba(142,166,237,1) 78%, rgba(53,110,198,1) 100%);
+    margin-bottom: 30px;
+}
+
+form{
+    display: flex;
+    
+
+    input{
+        padding: 5px;
+        outline: none;
+        border: none;
+    }
+    
+    button{
+        border: none;
+        padding: 5px;
+        cursor: pointer;
+        background-color: rgb(202, 202, 202);
+    }
+}
+
+.loader{
+    display: none;
+    margin-top: 100px;
+    width: 100px;
+}
+
+.loader.active{
+    display: block;
+}
+
+.currentWeather{
+    margin-top: 20px;
+    display: none;
+    width: min(500px, 90%);
+    justify-content: space-between;
+    background-color: rgb(238 238 238 / 20%);
+    height: 200px;
+    align-items: flex-end;
+    padding: 40px 20px;
+    border-radius: 20px;
+
+    .currentweather, .currentCondition{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        .currentTempWrapper{
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+    
+            h1{
+                font-size: 50px;
+            }
+        }
+    }
+
+    
+}
+
+.currentWeather.active{
+    display: flex;
+}
+
+.otherdaysheadingtext{
+    display: none;
+    margin-top: 30px;
+}
+
+.otherdaysheadingtext.active{
+    display: block;
+}
+
+.otherdaysWrapper{
+    background-color: rgb(238 238 238 / 20%);
+    border-radius: 10px;
+    width: min(700px, 90%);
+    display: none;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 20px;
+
+    .otherdays{
+        display: flex;
+        gap: 25px;
+        flex-direction: column;
+        text-align: left;
+        align-items: flex-start;
+    }
+
+    .otherdays:nth-child(2){
+        font-size: 14px;
+    }
+
+    .extra{
+        gap: 29.2px;
+    }
+}
+
+.otherdaysWrapper.active{
+    display: flex;
+}
+
